@@ -1,0 +1,41 @@
+.wedo {
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    &__title {
+            margin-top: 0;
+            margin-bottom: 50px;
+    
+            color: var(--title-text-color);
+    
+            font-size: 36px;
+            line-height: 1.17;
+            text-align: center;
+    }
+    &__box {
+        position: relative;
+        display: block;
+    }
+    &__imag-title {
+        position: absolute;
+        transform: translate(0%, -100%);
+    
+        width: 100%;
+        text-align: center;
+        padding-top: 27px;
+        padding-bottom: 27px;
+    
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: rgba(47, 48, 58, 0.8);
+    }
+
+}
+.wedo {
+    @media screen and (max-width: 1200px) {
+          display: none;
+        }
+}

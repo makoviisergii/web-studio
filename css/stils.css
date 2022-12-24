@@ -1,0 +1,77 @@
+/* основной текст #757575/
+/* вторичный  #212121 /
+
+/* основной фон #F5F5F5*/
+/* вторичный фон #F5F4FA*/
+/* акцнт #2196F3 */
+
+
+
+
+
+
+
+
+
+/* styles index */
+
+
+
+/* site nav */
+
+
+/* hero */
+
+
+
+/* about us */
+
+
+/* .about-title::before {
+    content: "";
+    height: 120px;
+    display: block;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;} */
+
+/* .about-item:nth-child(1) .about-title::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.about-item:nth-child(2) .about-title::before {
+    background-image: url(../images/clock.svg);
+}
+
+.about-item:nth-child(3) .about-title::before {
+    background-image: url(../images/diagram.svg);
+}
+
+
+.about-item:nth-child(4) .about-title::before {
+    background-image: url(../images/astronaut.svg);
+} */
+
+/* What do we do? */
+
+
+
+/* -----------------Our team----------------------- */
+
+
+/* --------------------CLAENTS---------------------- */
+
+
+/* --------------------footer----------------- */
+
+/* -----------------styles PORTFOLIO-------------- */
+
+/* ------------------filtr batton--------------- */
+
+
+/* --------------works---------------- */
+
+/* ------------------modal-window------------- */
