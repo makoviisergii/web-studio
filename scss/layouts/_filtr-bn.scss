@@ -3,13 +3,13 @@
   &-list {
     display: block;
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
-  &__item + &__item {
-    margin-left: 8px;
-  }
+
   &-button {
     color: var(--title-text-color);
     background-color: var(--buttons-color);

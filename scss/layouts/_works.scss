@@ -1,17 +1,36 @@
  .project {
-    min-width: 1200px;
-    display: block;
+
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
+   
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+    }
+
+    
+    @include tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
     &__item {
-            background: #FFFFFF;
-        }
+    background: #FFFFFF;
+
+    @include tablet {
+    max-width: calc((100% - 30px)/2);
+    }
+
+    @include desktop {
+    max-width: calc((100% - 60px)/3);
+    }
+
+    }
 
      &__link {
-            width: 100%;
             display: block;
             &:hover,
             &:focus {
@@ -25,61 +44,66 @@
             position: relative;
             overflow: hidden;
 
+            & img {
+            width: 100%;
+            }
+
             &::after {
-                    content: "Технокрик це майданчик розростання коронавірусу. Компанія використовує цю платформу для цифрового шпигунства та атак на захищені ресурси конкурентів";
-            
-                    position: absolute;
-                    display: block;
-            
-                    transform: translateY(100%);
-                    transition: transform var(--timing-function);
-            
-                    top: 0;
-            
-                    width: 100%;
-                    height: 100%;
-            
-                    padding: 63px 24px;
-            
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: calc(28 / 18);
-                    letter-spacing: 0.03em;
-                    color: #FFFFFF;
-                    background: rgba(33, 150, 243, 0.9);
-            
-                    transition-property: color, fill, background-color, border-color, box-shadow;
-                    transition: var(--timing-function);
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vero praesentium aut non ex optio reprehenderit explicabo nulla quia eaque?";
+    
+            position: absolute;
+            display: block;
+    
+            transform: translateY(100%);
+            transition: transform var(--timing-function);
+    
+            top: 0;
+    
+            width: 100%;
+            height: 100%;
+    
+            padding: 63px 24px;
+    
+            font-weight: 400;
+            font-size: 18px;
+            line-height: calc(28 / 18);
+            letter-spacing: 0.03em;
+            color: #FFFFFF;
+            background: rgba(33, 150, 243, 0.9);
+    
+            transition-property: color, fill, background-color, border-color, box-shadow;
+            transition: var(--timing-function);
 
-                    .project__link:hover &,
-                        .project__link:focus & {
-                            transform: translateY(0%);
-                    
-                    
-                        }
+            .project__link:hover &,
+                .project__link:focus & {
+                    transform: translateY(0%);
             
+                    
                 }
-        
+    
         }
-&__title {
 
-    padding-bottom: 5px;
-    color: var(--title-text-color);
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+        }
 
-}
-&__subject {
-        color: var(--primary-text-color);
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.03em;
-    }
-&__desc {
-    padding: 20px 24px;
-    border-right: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-   }
+        &__title {
+
+            padding-bottom: 5px;
+            color: var(--title-text-color);
+            font-size: 18px;
+            line-height: 2;
+            letter-spacing: 0.06em;
+
+        }
+        &__subject {
+                color: var(--primary-text-color);
+                font-size: 16px;
+                line-height: 1.88;
+                letter-spacing: 0.03em;
+            }
+        &__desc {
+            padding: 20px 24px;
+            border-right: 1px solid #EEEEEE;
+            border-left: 1px solid #EEEEEE;
+            border-bottom: 1px solid #EEEEEE;
+        }
 }
