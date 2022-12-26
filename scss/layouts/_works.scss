@@ -41,45 +41,39 @@
         }
 
         &__image {
-            position: relative;
-            overflow: hidden;
+        position: relative;
+        overflow: hidden;
 
-            & img {
-            width: 100%;
-            }
+        &::after {
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vero praesentium aut non ex optio reprehenderit explicabo nulla quia eaque?";
 
-            &::after {
-            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vero praesentium aut non ex optio reprehenderit explicabo nulla quia eaque?";
-    
-            position: absolute;
-            display: block;
-    
-            transform: translateY(100%);
-            transition: transform var(--timing-function);
-    
-            top: 0;
-    
-            width: 100%;
-            height: 100%;
-    
-            padding: 63px 24px;
-    
-            font-weight: 400;
-            font-size: 18px;
-            line-height: calc(28 / 18);
-            letter-spacing: 0.03em;
-            color: #FFFFFF;
-            background: rgba(33, 150, 243, 0.9);
-    
-            transition-property: color, fill, background-color, border-color, box-shadow;
-            transition: var(--timing-function);
+        position: absolute;
+        display: block;
 
-            .project__link:hover &,
-                .project__link:focus & {
-                    transform: translateY(0%);
-            
-                    
-                }
+        transform: translateY(100%);
+        transition: transform var(--timing-function);
+
+        top: 0;
+
+        width: 100%;
+        height: 100%;
+
+        padding: 63px 24px;
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: calc(28 / 18);
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        background: rgba(33, 150, 243, 0.9);
+
+        transition-property: color, fill, background-color, border-color, box-shadow;
+        transition: var(--timing-function);
+
+        .project__link:hover &,
+        .project__link:focus & {
+        transform: translateY(0%);    
+        }
     
         }
 

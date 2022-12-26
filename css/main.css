@@ -920,9 +920,6 @@ footer {
   position: relative;
   overflow: hidden;
 }
-.project__image img {
-  width: 100%;
-}
 .project__image::after {
   content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vero praesentium aut non ex optio reprehenderit explicabo nulla quia eaque?";
   position: absolute;
