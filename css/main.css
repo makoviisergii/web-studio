@@ -881,34 +881,24 @@ footer {
 }
 
 .project {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  justify-items: stretch;
   gap: 30px;
-}
-@media screen and (max-width: 768px) {
-  .project {
-    flex-direction: column;
-  }
 }
 @media screen and (min-width: 768px) {
   .project {
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .project__item {
   background: #FFFFFF;
-}
-@media screen and (min-width: 768px) {
-  .project__item {
-    max-width: calc((100% - 30px) / 2);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .project__item {
-    max-width: calc((100% - 60px) / 3);
-  }
 }
 .project__link {
   display: block;
